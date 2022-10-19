@@ -1,0 +1,10 @@
+-- Active: 1663628303778@@127.0.0.1@5432@alura
+CREATE TABLE IF NOT EXISTS categoria (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE curso ADD COLUMN categoria_id INTEGER NOT NULL REFERENCES categoria(id);
+
+SELECT * FROM curso;
+

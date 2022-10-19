@@ -1,0 +1,2 @@
+-- Active: 1663628303778@@127.0.0.1@5432@alura
+CREATE SCHEMA academico;

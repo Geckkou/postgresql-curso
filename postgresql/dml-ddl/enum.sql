@@ -1,0 +1,12 @@
+-- Active: 1663628303778@@127.0.0.1@5432@alura@academico
+CREATE TYPE CLASSIFICACAO AS ENUM ('LIVRE', '12_ANOS', '14_ANOS', '16_ANOS', '18_ANOS');
+
+CREATE TEMPORARY TABLE IF NOT EXISTS filme(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    classificacao CLASSIFICACAO
+);
+
+INSERT INTO filme (nome, classificacao) VALUES ('Karate kid', '18_ANOS');
+
+SELECT * FROM filme;

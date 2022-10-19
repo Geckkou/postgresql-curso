@@ -1,0 +1,13 @@
+real
+serial
+numeric
+
+varchar(n)
+char(n)
+text
+
+boolean
+
+date
+time
+timestamp
